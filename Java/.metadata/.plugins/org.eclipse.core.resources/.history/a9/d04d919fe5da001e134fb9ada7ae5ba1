@@ -1,0 +1,13 @@
+package negozio;
+
+public class Negozio {
+    public static void main(String[] args) {
+        Prodotto p = new Prodotto();//oggetto di tipo prodotto
+        
+        p.codProdotto = 1;
+        p.nome = "Giacca";
+        p.prezzo = 19.99;
+
+        p.stampa();
+    }
+}

@@ -1,0 +1,14 @@
+package model;
+
+public class Impiegato extends Dipendente {
+	
+	private int oreLavoro;
+	private double pagaBase;
+	
+	public Impiegato(String nome, String cognome) {
+		super(nome, cognome);
+		this.ruolo = "Impiegato";
+		this.stipendio = oreLavoro*pagaBase;
+	}
+	
+}

@@ -1,0 +1,27 @@
+package interfaccia;
+
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+
+import elaborazioni.*;
+
+public class LetturaDemo2 {
+	
+	public static void main(String[] args) {
+		
+		try {
+			ArrayList<String> risp = LeggiFile.leggi("files/studenti.csv", true);
+			String query = "";
+			for (String riga : risp) {
+				String[] parole = riga.split(",");
+				String genere = parole[2];
+				query += "INSERT INTO studenti(genere) VALUES ('"+genere+"');";
+			}
+			LeggiFile.scrivi("files/query.txt", query);
+			
+		}catch(FileNotFoundException e){
+			System.err.println("errore nella lettura del file");
+			System.err.println(e.getMessage());
+		}
+	}
+}

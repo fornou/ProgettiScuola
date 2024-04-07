@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 20px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="submit"],
+input[type="reset"],
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+    background-color: #45a049;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    background-color: #fff;
+    color: #333;
+}
+
+td.color-cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+}

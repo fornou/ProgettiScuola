@@ -1,0 +1,4 @@
+script che mi da gli utenti --> elencoUtenti
+script che mi da i gruppi --> elencoGruppi
+nella mia home
+rendere questi due comandi disponibile al sistema

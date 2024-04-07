@@ -1,0 +1,17 @@
+img{
+    width: 200px;
+    height: 200px;
+}
+#cont{
+    width: 120px; /* Larghezza desiderata */
+    height: 350px; /* Altezza desiderata */
+    background-color: grey; /* Colore di sfondo, puoi cambiarlo a tuo piacimento */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+footer{
+    margin-top: 700px;
+    text-align: center;
+}

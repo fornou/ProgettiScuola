@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astronaut Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+
+    <h1>Astronaut candidates</h1>
+    <form action="" method="post">
+
+        <div>
+            <!--First, middle (optional) and last names-->
+            <fieldset>
+                <legend><h3>First, middle and last names</h3></legend>
+                <input type="text" id="first" name="first" placeholder="First Name" />
+                <br>
+                <input type="text" name="second" id="second" placeholder="Second Name">
+                <br>
+                <input type="text" name="last" id="last" placeholder="Last Name">
+            </fieldset>
+            <!-- Weight & Age -->
+            <fieldset>
+                <!-- Weight (max 100kg - sorry in space weight is limited) -->
+                <legend><h3>Weight & Age</h3></legend>
+                
+                <input type="number" name="weight" id="weight" min="1" max="100" step="2" placeholder="Weight">
+                
+                <!--Age-->
+                <input type="number" name="age" id="age" min="1" max="110" step="2" placeholder="Age">
+            </fieldset>
+
+            <!--Gender-->
+            <fieldset>
+                <legend><h3 for="gender">Your gender:</h3></legend>
+                <input type="radio" name="gender" id="male" value="man"/>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="woman"/>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="other" value="other" checked="checked"/>
+                <label for="other">Unkwown</label>
+            </fieldset>
+
+            <!--Hair and eye color (color picker or choose from a list)-->
+            <fieldset>
+                <legend><h3>Hair Color</h3></legend>
+                <input type="color" name="color-hair" value="colour-hair" id="colour-hair">
+            </fieldset>
+            <fieldset>
+                <legend><h3>Eye Color</h3></legend>
+                <input type="color" name="color-eye" value="colour-eye" id="colour-eye">
+            </fieldset>
+
+            <!-- Contact information: email, phone numbers, address -->
+            <fieldset>
+                <legend><h3>Contact Information</h3></legend>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <br>
+                <input type="tel" name="phone" id="phone" placeholder="Phone number">
+                <br>
+                <input type="" name="address" id="address" placeholder="Address">
+            </fieldset>
+
+            <!--Desired mission (NASA has limited future missions Missions)-->
+            <fieldset>
+            <legend><h3>Mission</h3></legend>
+                <select name="mission" id="mission">
+                    <option value="explorer1">Explorer1</option>
+                    <option value="explorer2">Explorer2</option>
+                    <option value="pioneer3">Pioneer3</option>
+                    <option value="ranger4">Ranger4</option>
+                    <option value="0" selected></option>
+                </select>
+            </fieldset>
+               
+            <!-- A short biography (max 255 characters) -->
+            <h3>A short biography:</h3>
+            <textarea name="message" rows="20" cols="40" maxlength="255">This text can be edited
+            </textarea>
+            
+             <!-- Activities -->
+            <fieldset>
+                <legend><h3 for="activities">Your favourite activities:</h3></legend>
+    
+                <input type="checkbox" name="activities" id="baseball" value="baseball-sport" checked="checked">
+                <label for="baseball">Baseball</label>
+                <input type="checkbox" name="activities" id="football" value="football-sport">
+                <label for="football">Football</label>
+                <input type="checkbox" name="activities" id="basketball" value="basketball-sport">
+                <label for="basketball">Basketball</label><br>
+                <input type="checkbox" name="activities" id="soccer" value="soccer-sport">
+                <label for="soccer">Soccer</label>
+                <input type="checkbox" name="activities" id="reading" value="reading-hobby">
+                <label for="reading">Reading</label>
+                <input type="checkbox" name="activities" id="painting" value="painting-hobby">
+                <label for="painting">Painting</label><br>
+                <input type="checkbox" name="activities" id="gardening" value="gardening-hobby">
+                <label for="gardening">Gardening</label>
+                <input type="checkbox" name="activities" id="cooking" value="cooking-hobby">
+                <label for="cooking">Cooking</label>
+                <input type="checkbox" name="activities" id="photography" value="photography-hobby">
+                <label for="photography">Photography</label><br>
+                <input type="checkbox" name="activities" id="hiking" value="hiking-hobby">
+                <label for="hiking">Hiking</label>
+                <input type="checkbox" name="activities" id="fishing" value="fishing-hobby">
+                <label for="fishing">Fishing</label>
+                <input type="checkbox" name="activities" id="writing" value="writing-hobby">
+                <label for="writing">Writing</label><br>
+                <input type="checkbox" name="activities" id="yoga" value="yoga-hobby">
+                <label for="yoga">Yoga</label>
+                <input type="checkbox" name="activities" id="knitting" value="knitting-hobby">
+                <label for="knitting">Knitting</label>
+            </fieldset>
+        </div>
+
+        <hr>
+
+        <div>
+            <button type="submit" value="Submit">Send Data</button>
+            <button type="reset" value="Reset">Reset Form</button>  
+        </div>
+        
+    </form>
+  </body>
+</html>

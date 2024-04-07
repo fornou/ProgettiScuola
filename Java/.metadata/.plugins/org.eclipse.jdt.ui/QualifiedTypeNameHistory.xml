@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="utili.FunzioniUtili"/>
+    <fullyQualifiedTypeName name="utili.u"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="utili.Utl"/>
+    <fullyQualifiedTypeName name="base.OreInMinuti"/>
+    <fullyQualifiedTypeName name="file.Canzone"/>
+    <fullyQualifiedTypeName name="its.Impiegato"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="elaborazioni.LeggiFile"/>
+    <fullyQualifiedTypeName name="model.Direttore"/>
+    <fullyQualifiedTypeName name="controller.Azienda"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="model.Dipendente"/>
+    <fullyQualifiedTypeName name="view.DipendentiWeb"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="util.Lettore"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="model.Impiegato"/>
+    <fullyQualifiedTypeName name="model.Fattorino"/>
+    <fullyQualifiedTypeName name="model.Dirigente"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+</qualifiedTypeNameHistroy>

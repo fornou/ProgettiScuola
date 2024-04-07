@@ -1,0 +1,26 @@
+package view;
+
+import java.util.ArrayList;
+import model.Dipendente;
+
+public class DipendentiWeb {
+
+	public String creaLista(ArrayList<Dipendente>dipendenti){
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append("<ul>");
+		
+		for (Dipendente dipendente : dipendenti) {
+			sb.append("<li>");
+			//sb.append(d.getNome() + " " + d.getCognome() + " " + d.getStipendio());
+			sb.append(dipendente);
+			sb.append("</li>");
+		}
+		
+		sb.append("</ul>");
+				
+		return sb.toString();
+	}
+	
+	
+}

@@ -1,0 +1,34 @@
+package demo;
+
+import luoghi.*;
+import poligoni.*;
+
+public class GeometriaDemo {
+	public static void main(String[] args) {
+		
+		Punto a = new Punto(3, 2);
+		Punto b = new Punto(7, 2);
+		Punto c = new Punto(3, 5);
+		
+		Segmento ab = new Segmento(a,b);
+		Segmento ac = new Segmento(a,c);
+		Segmento bc = new Segmento(b,c);
+		
+		Poligono bagno1 = new Triangolo(a, b, c);
+		Poligono cucina = new Rettangolo(ab, ac);
+		Poligono salaDaPranzo = new Rettangolo(ab, ac);
+		Poligono cameraDaLetto = new Rettangolo(ab, ac);
+		Poligono studio = new Quadrato(ab);
+		
+		System.out.println(studio);
+		
+		Poligono[] APPARTAMENTO = {bagno1, cucina, salaDaPranzo, cameraDaLetto, studio};
+		
+		double superficieTotale = 0;
+		for(Poligono stanza: APPARTAMENTO) {
+			superficieTotale+=stanza.area();
+		}
+		
+		System.out.println("Superficie totale: "+superficieTotale);
+	}
+}

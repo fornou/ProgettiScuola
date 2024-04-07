@@ -1,0 +1,14 @@
+package model;
+
+public class Dirigente extends Dipendente {
+	
+	private int numeroConsegne;
+	private double pagaBase;
+	
+	public Dirigente(String nome, String cognome) {
+		super(nome, cognome);
+		this.ruolo = "Fattorino";
+		this.stipendio = numeroConsegne*pagaBase;
+	}
+	
+}

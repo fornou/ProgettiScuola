@@ -1,0 +1,32 @@
+use its_2024;
+truncate studenti;
+
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Revelli', 'Alessandro', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Gabrielli', 'Matteo', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Murino', 'Giorgio', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Dammacco', 'Luca', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Panzica', 'Daniele', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Fiore', 'Gianluca', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Pinna', 'Francesco', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Ughetto', 'Filippo', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Massaro', 'Marco', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Colantuono', 'Federico', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Botta', 'Davide', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Gioda', 'Chiara', ' f');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Lume', 'Bryan', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Racca', 'Andrea', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Bordino', 'Stefania', ' f');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Forneron', 'Mattia', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Prette', 'Lorenzo', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Bruzzese', 'Alessandro', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Zanellati', 'Loris', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Turco', 'Alessandro', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Fernandez', 'William', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Durando', 'Sara', ' f');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Matacchione', 'Federico', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Zhou', 'Giulia', ' f');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Vacca', 'Giulio', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Riccio', 'Umberto', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Andreozzi', 'Davide', ' m');
+INSERT INTO studenti(cognome, nome, genere) VALUES ('Aggeri', 'Nicola', ' m');
+
