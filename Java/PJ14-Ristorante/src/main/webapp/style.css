@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* Stile per il form */
+form {
+    margin: 0 auto; /* Imposta il margine laterale a "auto" per centrare il form */
+    max-width: 400px; /* Imposta una larghezza massima per il form */
+}
+
+/* Stile per il form contenente il form */
+.form-container {
+    text-align: center; /* Allinea il testo al centro all'interno del contenitore del form */
+}
+/* Stile per l'header */
+header, footer {
+    background-color: gray; /* Colore di sfondo */
+    padding: 20px; /* Spaziatura interna */
+    text-align: center; /* Allineamento del testo al centro */
+}
+
+/* Stile per il footer */
+footer {
+    position: fixed; /* Posizione fissa in basso */
+    bottom: 0; /* Fissato in basso */
+    width: 100%; /* Occupa l'intera larghezza */
+}
+
+/* Stile per gli h1 */
+h1 {
+    font-size: 24px; /* Dimensione del testo */
+    color: black; /* Colore del testo */
+    margin-top: 20px; /* Margine superiore */
+    text-align: center; /* Allineamento del testo al centro */
+}
+
+/* Stile per i paragrafi */
+p {
+    font-size: 16px;
+    line-height: 1.5; /* Altezza della linea */
+    color: dark-gray; /* Colore del testo */
+    margin-bottom: 20px; /* Margine inferiore */
+    text-align: center; /* Allineamento del testo al centro */
+}
+
+/* Stile per il menu */
+nav {
+    list-style-type: none; /* Rimuove i punti elenco */
+    margin: 0;
+    padding: 0;
+}
+
+/* Stile per gli elementi del menu */
+nav li {
+    display: inline-block; /* Disposizione in linea */
+    margin-right: 20px; /* Margine a destra tra gli elementi del menu */
+}
+
+/* Stile per i link nel menu */
+nav li a {
+    text-decoration: none; /* Rimuove la sottolineatura */
+    color: #333; /* Colore del testo */
+    font-size: 16px; /* Dimensione del testo */
+    padding: 10px; /* Spaziatura interna */
+}
+
+/* Stile per il link attivo nel menu */
+nav li a.active {
+    font-weight: bold; /* Testo in grassetto per il link attivo */
+    color: #ff0000; /* Colore rosso per il link attivo */
+}
+

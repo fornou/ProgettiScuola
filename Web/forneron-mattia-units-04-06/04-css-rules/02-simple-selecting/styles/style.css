@@ -1,0 +1,40 @@
+main, header, footer{
+    text-align: center; 
+}
+header, footer{
+    background-color: lightblue;
+}
+h1{
+    color: red;
+    font-family: Verdana, Geneva, sans-serif;
+}
+h2{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+ul li{
+    font-family: 'Courier New', Courier, monospace;
+}
+p, ul, address{
+    font-family: Arial, sans-serif;
+}
+p, address{
+    font-size: 20px;
+}
+ul{
+    font-size: 18px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+#services, #contact, #about{
+    background-color: lightcoral;
+}
+footer p{
+    color: white;
+}
+.serv{
+    color: gray;
+}

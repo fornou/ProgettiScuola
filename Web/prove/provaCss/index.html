@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Css</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">container</div>
+    <div class="byline">byline</div>
+
+    <section>
+        <!-- Will NOT match -->
+        <p>Lorem ipsum dolor sit amet</p>
+        <h2>title</h2>
+        <!-- WILL match -->
+        <p>This paragraph will be selected</p>
+        <div>
+            <!-- Will NOT match -->
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <!-- WILL match -->
+        <p>This paragraph will be selected</p>
+       </section>
+       <!-- Will NOT match -->
+       <p>Lorem ipsum dolor sit amet</p>
+
+
+       <ol>
+
+        <li
+        >item 1</li
+        >
+        
+        <li
+        >item 2</li
+        >
+        
+        <li
+        >item 3
+        
+        <ul
+        >
+        
+        <li
+        >item a</li
+        >
+        
+        <li
+        >item b</li
+        >
+        
+        <li
+        >item c</li
+        >
+         </ul
+        >
+         </li
+        >
+        
+        <li class
+        ="myclass"
+        >item 4 (myclass)</li
+        >
+        
+        <li
+        >item 5</li
+        >
+        
+        <li
+        >item 6</li
+        >
+        
+        <li
+        >item 7</li
+        >
+        </ol
+        >
+        
+    
+</body>
+</html>

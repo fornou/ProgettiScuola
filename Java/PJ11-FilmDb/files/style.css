@@ -1,0 +1,46 @@
+/* Stile per il titolo */
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    color: #655c5c;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Stile per la tabella */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* Stile per le celle dell'intestazione */
+  th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  
+  /* Stile per le celle dei dati */
+  td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Stile per le righe pari */
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Stile per le righe dispari */
+  tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  

@@ -1,0 +1,52 @@
+Benvenuto a Indovina il Numero!
+Inserisci il limite minore per il range dei numeri
+0
+Inserisci il limite superiore per il range dei numeri
+10
+Tentativo 1:3
+Il mio numero è più grande!
+Tentativo 2:4
+Il mio numero è più grande!
+Tentativo 3:5
+Il mio numero è più grande!
+Tentativo 4:6
+Il mio numero è più grande!
+Tentativo 5:7
+Il mio numero è più grande!
+Tentativo 6:8
+Il mio numero è più grande!
+Tentativo 7:9
+Il mio numero è più grande!
+Tentativo 8:10
+Complimenti! Hai indovinato il numero segreto 10 in 8 tentativi!
+Vuoi giocare ancora? (Sì/No):
+si
+Inserisci il limite minore per il range dei numeri
+30
+Inserisci il limite superiore per il range dei numeri
+50
+Tentativo 1:36
+Il mio numero è più grande!
+Tentativo 2:40
+Il mio numero è più grande!
+Tentativo 3:47
+Il mio numero è più grande!
+Tentativo 4:49
+Il mio numero è più piccolo!
+Tentativo 5:48
+Complimenti! Hai indovinato il numero segreto 48 in 5 tentativi!
+Vuoi giocare ancora? (Sì/No):
+si
+Inserisci il limite minore per il range dei numeri
+3
+Inserisci il limite superiore per il range dei numeri
+6
+Tentativo 1:4
+Il mio numero è più grande!
+Tentativo 2:5
+Il mio numero è più grande!
+Tentativo 3:6
+Complimenti! Hai indovinato il numero segreto 6 in 3 tentativi!
+Vuoi giocare ancora? (Sì/No):
+no
+Grazie per aver giocato!

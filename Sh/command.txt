@@ -1,0 +1,43 @@
+ls 	
+sudo apt-get update
+sudo apt-get upgrade
+sudo unminimize
+sudo reboot
+sudo man getpass sudo_root
+clear
+pwd -> print working directory
+
+cd ..
+ls per vedere cosa c'è
+la -l o -la -a
+
+
+mkdir per file e directory
+cat nomefile.txt leggere
+echo "miaoo"  >> nomefile.txt
+>> aggiunge dopo 
+> sovrascrive
+
+set -o noclobber --> no sovrascrittura
+
+printf "io sono %s\n" $USER >> nomefile.txt
+
+ 
+cartelle principali:
+
+bin --> i programmi con i comandi
+sbin --> i programmi con i comandi amministrativi
+proc --> info sui risorse di sistema, su kernel
+var --> file variabili che cambiano nel tempo (sono i log di system)
+etc --> file di configurazione di sistema e dei programmi
+lost&found --> cestino
+media --> montaggio per dispositivi rimovibili
+dev --> file per i miei device
+boot --> file necessari all'avvio
+opt --> per sw aggiuntivi
+run --> file di runtime (pid & process)
+
+in root tmp--> file temporanei
+
+usr --> contiene la maggiorparte dei programmi installati
+unix system resources

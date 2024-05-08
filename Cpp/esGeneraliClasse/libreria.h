@@ -40,13 +40,16 @@ void pause(){
 bool ctrl_par(string s){
     bool c = true;
     string alfabeto = "abcdefghijklmnopqrstuvxywz ";
-    char lettPar, lettAlf, lettAlfMaiusc;
+    string alfabetoMaiusc = "ABCDEFGHIJKLMNOPQRSTUVXWYZ ";
+    char lettPar, lettParMaiusc, lettAlf, lettAlfMaiusc;
 
     for(int i = 0; i < s.length(); i++)
     {
         lettPar = s[i];
+        lettParMaiusc = toupper(s[i]);
         size_t found = alfabeto.find(lettPar);
-        if(found == string::npos){// se sono uguali è perchè non è stato trovato
+        size_t foundM = alfabetoMaiusc.find(lettParMaiusc);
+        if(found == string::npos && foundM == string::npos){// se sono uguali è perchè non è stato trovato
             c = false;
             break;
         }

@@ -1,0 +1,41 @@
+body {
+    color: yellow;
+    background-color: black;
+}
+#container {
+    width: 70%;
+    padding: 10px;
+    background-color: red;
+}
+.byline {
+    color: red;
+    font-size: 12px;
+    border-bottom:
+    1px solid #ccc;
+    background-color: blue;
+}
+h2 + p {
+    color: olive;
+}
+
+
+ol li {
+    color: green;
+}
+ol > li {
+color: purple;
+}
+li {
+color: yellow;
+}
+li.myclass {
+color: red;
+}
+li.myclass ~ li {
+color: blue;
+}
+li.myclass + li {
+color: orange;
+}
+    
+    

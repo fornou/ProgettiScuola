@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap');
+
+main, header, footer{
+    text-align: center; 
+}
+header, footer{
+    background-color: lightblue;
+}
+#list{
+    margin: 0 33%;
+    background: rgb(19, 148, 199);
+}
+h1, h2, footer p{
+    font-family: 'Courier New', Courier, monospace;
+}
+h1, footer p, p a{
+    color: rgb(19, 148, 199);
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    color: white;
+}
+p, ul, address{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+ul{
+    list-style: none;
+}
+
+
+/* Tutto ciò che riguarada i link con tag a */
+a{
+    text-decoration: none;
+    color: red;
+}
+p a{
+    font-family: "Jersey 10 Charted", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+}
+p a:hover{
+    color: rgb(6, 114, 157);
+}
+ul li a{
+    color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+#services ul li a{
+    color: rgb(255, 255, 255);
+}
+#services ul li a:active{
+    color: rgb(255, 0, 0);
+}
+a:hover {
+    text-decoration: underline; 
+}  
+p a:active, ul li a:active {
+    color: #ff6347;
+}
+
+
+
+/* Sfondo rosa per id seguenti che corrispondono a section */
+#services, #contact, #about{
+    background-color: lightcoral;
+}
+
+/* Colore grigio per classe seguente che corrisponde a un h2*/
+.serv{
+    color: rgb(0, 0, 0);
+}
+
+
+
+

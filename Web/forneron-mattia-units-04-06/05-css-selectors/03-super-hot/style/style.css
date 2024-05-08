@@ -1,0 +1,49 @@
+body {
+background-color: rgb(255, 255, 255);
+}
+
+/* Aggiungi una regola per rendere i link e i link visitati di colore arancione scuro */
+
+a,
+a:visited {
+color: darkorange;
+}
+
+/* Aggiungi una regola che farà sì che l'intestazione della tabella abbia un colore di sfondo diverso. */
+
+th {
+background-color: rgb(246, 175, 104);
+}
+
+/* Aggiungi una regola che farà sì che la prima cella di ogni riga dati abbia uno sfondo rosso e testo bianco. */
+
+tr > td:first-child {
+background-color: red;
+color: white;
+}
+
+/* Aggiungi una regola che "zèbra strippi" gli sfondi delle righe, alternando tra bianco e #eeeeee. */
+
+tr:nth-child(odd) {
+background-color: #eeeeee;
+}
+
+/* Aggiungi una regola che renderà il label rosso quando la checkbox viene cliccata. */
+
+input[type="checkbox"]:checked + label {
+color: red;
+}
+
+/* Aggiungi una regola che renderà la prima lettera del nome del peperoncino enorme e grassetto. */
+
+td:nth-child(2)::first-letter {
+  font-size: x-large;
+  font-weight:bolder ;
+}
+
+
+/* Aggiungi una regola che individuerà qualsiasi peperoncino che sia superhot e colorerà il link di rosso. */
+
+a[title*="superhot"] {
+color: red;
+}
