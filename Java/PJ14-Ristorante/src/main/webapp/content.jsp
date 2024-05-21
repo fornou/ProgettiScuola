@@ -4,10 +4,16 @@
 <%@page import="db.Connessione"%>
 <h1>Ecco il nostro Menù</h1>
 
+<div class  ="content">
+
 <%
 	String pagina = "";
-	String query = "select * from studenti";
-
+	String query = "select p.nome, p.prezzo, tp.nome as categoria " +
+			"from piatti p inner join tipi_piatto as tp " +
+			"on tp.id = p.tipo_piatto_id ";
+	Connessione cn;
+	Statement st;
+	ResultSet rs;
 	ArrayList<String> ris = new ArrayList<>();
 	
 	if(request.getParameter("pagina") != null){
@@ -19,44 +25,43 @@
 			%>
 			<%@include file="primi.html" %>
 			<%
+			query += "where tp.nome = 'Secondo'";
 		break;
 			
 		case "secondi":
-			query = "select * from piatti where tipo_piatto = 'secondi'";
+			query += "where tp.nome = 'Secondo'";
 		break;
 			
 		case "dessert":
+			query += "where tp.nome = 'Dessert'";
 		break;
 			
 		case "bevande":
+			query += "where tp.nome = 'Bevanda'";
 		break;
-		
-		case "prova=si":
-			break;
 			
 		default:
-			Connessione cn = new Connessione();
-			Statement st = cn.getConn().createStatement();
-			ResultSet rs = st.executeQuery(query);
-			
-			while(rs.next()){
-				ris.add(rs.getString("cognome"));
-				ris.add(rs.getString("nome"));
-			}
-			
-			
 			out.print("<h1>" + pagina + "</h1>");
 		break;
 	}
 	
 	
+	cn = new Connessione();
+	st = cn.getConn().createStatement();
+	rs = st.executeQuery(query);
 	
-	for(String studente : ris){
-		out.print("<h2>" + studente + "</h2>");
+	while(rs.next()){
+		ris.add(rs.getString("nome"));
+		ris.add(rs.getString("prezzo"));
+	}
+	
+	
+	for(String stringa : ris){
+		out.print("<h2>" + stringa + "</h2>");
 	}
 	
 	
 	
 
 %>
-
+</div>

@@ -1,0 +1,104 @@
+html {
+    box-sizing: border-box;
+}*,*::before,*::after {
+    box-sizing: inherit;
+}
+
+.frog {
+    margin: 50px;
+    display: inline-block;/*si riferisce al contenuto*/
+    text-align: center;
+    padding-top: 30px;
+    font-size: 24px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    cursor: e-resize;
+    position: relative;
+    width: 150px;
+    height: 70px;
+}
+
+.small {
+    width: 100px;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.type1 {
+    background-color: #4bcd4b;
+}
+
+.type2 {
+    background-color: rgb(255, 94, 0);
+}
+
+
+
+.frog.type1::after,
+.frog.type1::before {
+    background-color: rgb(190, 224, 158);
+}
+
+.frog.type2::after,
+.frog.type2::before {
+    background-color: rgb(255, 189, 174);
+}
+
+
+.frog.type1.small::after,
+.frog.type1.small::before {
+    background-color: rgb(102, 134, 73);
+}
+
+.frog.type2.small::after,
+.frog.type2.small::before {
+    background-color: rgb(255, 0, 0);
+}
+
+.frog.small::before,
+.frog::before {
+    content: 'o';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    left: -10%;
+}
+
+.frog.small::after, .frog::after {
+    content: 'o';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    left: 70%;
+}
+
+.frog::after {
+    top: -10%;
+    left: 82%;
+}
+
+.frog.small::before,
+.frog.small::after {
+    color: white;
+}
+
+.frog::before,
+.frog::after {
+    border: 2px solid #333;
+}
+
+.frog.type1:hover::before,
+.frog.type1:hover::after,
+.frog.type2:hover::before,
+.frog.type2:hover::after {
+    background-color: black;
+}
+
+.frog:hover::before,
+.frog:hover::after {
+    color: rgb(255, 255, 255);
+}

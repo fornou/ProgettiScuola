@@ -27,4 +27,13 @@ public class Connessione {
 			System.out.println("Hai un problema nella connessione: " + e.getMessage());
 		}
 	}
+	
+	public void disconnetti() {
+		try{
+			this.conn.close();
+			System.out.println("Sei stato sconnesso");
+		}catch(SQLException e) {
+			System.out.println("Hai un problema nella sconnessione: " + e.getMessage());
+		}
+	}
 }

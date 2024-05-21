@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ajusta la altura del cuerpo al 100% del viewport */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+div {
+    background-repeat: repeat;
+    width: 400px;
+    height: 400px;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 376px) {
+    body{
+        background-color: rgb(0, 50, 252);
+    }
+    div{
+        background-image: url('https://source.unsplash.com/60x60/?italy');
+    }
+}
+@media (min-width: 576px) {
+    body{
+        background-color: rgb(255, 0, 0);
+    }
+    div{
+        background-image: url('https://source.unsplash.com/60x60/?france');
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body{
+        background-color: rgb(255, 187, 0);
+    }
+    div{
+        background-image: url('https://source.unsplash.com/60x60/?spain');
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body{
+        background-color: rgb(84, 83, 83);
+    }
+    div{
+        background-image: url('https://source.unsplash.com/60x60/?finland');
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body{
+        background-color: rgb(0, 0, 0);
+    }
+    div{
+        background-image: url('https://source.unsplash.com/60x60/?usa');
+    }
+}
