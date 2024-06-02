@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <%@page import="java.util.ArrayList"%>
-<%@page import="repos.FilmDAO"%>
+<%@page import="com.forneron.repos.FilmDAO"%>
 <%@page import="model.Film"%>
 <html>
 <head>

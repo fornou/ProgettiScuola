@@ -1,5 +1,5 @@
 <%@page import="model.Film"%>
-<%@page import="repos.FilmDAO"%>
+<%@page import="com.forneron.repos.FilmDAO"%>
 <%@page import="java.util.Scanner"%>
 
 <%

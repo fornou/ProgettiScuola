@@ -4,7 +4,6 @@
 <div class="row">
 	
 	<%List<Piatto> piatti = (List<Piatto>)request.getAttribute("piatti"); %>
-	<%List<Categoria> categorie = (List<Categoria>)request.getAttribute("categorie"); %>
 	
 	<%	
 	for (Piatto p : piatti) {

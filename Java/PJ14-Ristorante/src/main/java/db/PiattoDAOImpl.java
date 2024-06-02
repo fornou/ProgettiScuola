@@ -63,4 +63,35 @@ public class PiattoDAOImpl implements PiattoDAO {
 		}
 		
 	}
+
+	@Override
+	public Piatto getPiattoById(int id) {
+		try {
+			ps = cn.getConn().prepareStatement(FIND_ONE);
+			ps.setInt(1, id);
+			ps.execute();
+			
+			boolean next = rs.next();// mi dice se ha qualche elemento
+			if(next) {
+				Piatto p = new Piatto(); 
+				p.setId(rs.getInt("id"));
+				p.setNome(rs.getString("nome"));
+				p.setPrezzo(rs.getDouble("prezzo"));
+				
+				Categoria c = new Categoria();
+				c.setId(rs.getInt("tipo_piatto_id"));
+				p.setCategoria(c);
+				
+				return p;
+				
+			}else {
+				System.err.println("Errore, non c'è elemento con questo id!");
+			}
+			
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 }

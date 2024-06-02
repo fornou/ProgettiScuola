@@ -23,9 +23,9 @@
 		
 		case "primi":
 			%>
-			<%@include file="primi.html" %>
+			<%--  <%@include file="primi.html" %> --%>
 			<%
-			query += "where tp.nome = 'Secondo'";
+			query += "where tp.nome = 'Primo'";
 		break;
 			
 		case "secondi":
@@ -51,13 +51,29 @@
 	rs = st.executeQuery(query);
 	
 	while(rs.next()){
-		ris.add(rs.getString("nome"));
-		ris.add(rs.getString("prezzo"));
+		ris.add(rs.getString("nome")+","+rs.getString("prezzo"));
 	}
 	
 	
 	for(String stringa : ris){
-		out.print("<h2>" + stringa + "</h2>");
+		
+		String[] valori = stringa.split(",");
+	    String nome = valori[0];
+	    String prezzo = valori[1];
+		
+	%> 	<div class="card" style="width: 18rem;">
+
+		<img src="..." class="card-img-top" alt="...">
+		<div class="card-body">
+			<h5 class="card-title"><%= nome %></h5>
+			<p class="card-text">
+				Prezzo: <%= prezzo %>
+			</p>
+			<a href="#" class="btn btn-primary">Informazioni</a>
+		</div>
+
+	</div>
+	<% 
 	}
 	
 	

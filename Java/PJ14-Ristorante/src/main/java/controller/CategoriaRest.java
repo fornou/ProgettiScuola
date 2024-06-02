@@ -18,77 +18,41 @@ import services.RistoranteServiceDAO;
 @WebServlet("/categorie")
 public class CategoriaRest extends HttpServlet{
 	
-	
-	private RistoranteServiceDAO service = new RistoranteServiceDAO() {
+	private int cont = 1, cont2 = 1;
+	//private RistoranteServiceDAO service = new RistoranteServiceDAO() {
 		
 	public void CategoriaRest() {
 		System.out.println("Servlet Categoria Costruita!!");
 	}
 		
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		cont ++;
+		System.out.println("Richiesta get: " + cont);
 		
-		response.setContentType("application/api");
+		if(request.getParameter("pagina")!=null) {
+			String pagina = request.getParameter("pagina");
+			response.getWriter()
+			.print("Ecco il parametro pagina" + pagina);
+		}
 		
-		JSONArray array = new JSONArray();
-		JSONObject obj1 = new JSONObject();
-		JSONObject obj2 = new JSONObject();
-		JSONObject obj3 = new JSONObject();
+		if(request.getParameter("nome categoria") != null) {
+			String categoria = request.getParameter("");
+			response.getWriter()
+			.print("Ecco il parametro categoria" + categoria);
+		}
 		
-		array.put(obj1);
-		array.put(obj2);
-		array.put(obj3);
-		
-		response.getWriter().print(array.toString());
-		
-		
+		response.getWriter()
+		.print("Richiesta get: " + cont);
 		
 	}
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		cont2 ++;
+		System.out.println("Richiesta post: " + cont2);
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		@Override
-		public Piatto getPiattoById(int id) {
-			// TODO Auto-generated method stub
-			return null;
-		}
-		
-		@Override
-		public List<Piatto> getPiattiByCategoria(Categoria c) {
-			// TODO Auto-generated method stub
-			return null;
-		}
-		
-		@Override
-		public List<Piatto> getPiatti() {
-			// TODO Auto-generated method stub
-			return null;
-		}
-		
-		@Override
-		public List<Categoria> getCategorie() {
-			// TODO Auto-generated method stub
-			return null;
-		}
-		
-		@Override
-		public Categoria getCategoriaById(int id) {
-			// TODO Auto-generated method stub
-			return null;
-		}
-	};
+		response.getWriter()
+		.print("Richiesta get: " + cont2);
+	}
+	
 	
 }

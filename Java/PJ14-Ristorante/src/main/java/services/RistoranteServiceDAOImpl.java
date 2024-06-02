@@ -66,4 +66,8 @@ public class RistoranteServiceDAOImpl implements RistoranteServiceDAO {
 				.filter(p -> p.getCategoria().getId() == c.getId())
 				.toList;*/
 	}
+
+	public void addPiatto(Piatto p) {
+		daoPiatti.addPiatto(p);
+	}
 }
