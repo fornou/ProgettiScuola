@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(130deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.reel-container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instagram-post {
+    width: 400px;
+    border: 1px solid #dbdbdb;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 10px 15px 40px black; /*left top trasparenza*/
+    margin: 100px 0; 
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    height: calc(100vh - 200px); /* Ensures each post occupies most of the viewport */
+}
+
+.post-header, .post-footer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.post-header img, .post-footer img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.post-header div, .post-footer div {
+    display: flex;
+    flex-direction: column;
+}
+.post-header div span, .post-footer div span {
+    font-size: 14px;
+    font-weight: bold;
+}
+.post-header div small, .post-footer div small {
+    font-size: 12px;
+    color: #8e8e8e;
+}
+.post-image {
+    width: 100%;
+    height: auto;
+}
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.post-actions i {
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.post-actions i:last-child {
+    margin-right: 0;
+}
+.post-caption {
+    padding: 10px;
+}
+.post-caption p {
+    margin: 0;
+    font-size: 14px;
+}

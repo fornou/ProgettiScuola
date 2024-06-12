@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>Nazioni</h1>
+	
+	<script type="text/javascript">
+	
+		const URL = '/api/nazioni';
+		
+		fetch(URL)
+			.then(risposta => risposta.json())
+			.then(listaNazioni => {
+				for (const nazione of listaNazioni){
+					const foto = document.createElement('img')
+					foto.src = nazione.img
+					foto.alt = nazione.name
+					document.body.append(foto)
+				}
+			})
+		
+	
+	</script>
+
+</body>
+</html>
