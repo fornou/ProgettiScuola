@@ -3,28 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 	<h1>Nazioni</h1>
 	
-	<script type="text/javascript">
-	
-		const URL = '/api/nazioni';
-		
-		fetch(URL)
-			.then(risposta => risposta.json())
-			.then(listaNazioni => {
-				for (const nazione of listaNazioni){
-					const foto = document.createElement('img')
-					foto.src = nazione.img
-					foto.alt = nazione.name
-					document.body.append(foto)
-				}
-			})
-		
-	
-	</script>
+	<script type="text/javascript" src="script.js">	</script>
 
 </body>
 </html>

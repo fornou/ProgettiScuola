@@ -29,10 +29,10 @@ body {
     border-radius: 25px;
     background-color: #fff;
     box-shadow: 10px 15px 40px black; /*left top trasparenza*/
-    margin: 100px 0; 
+    margin: 175px 0; 
     scroll-snap-align: center;
     flex-shrink: 0;
-    height: calc(100vh - 200px); /* Ensures each post occupies most of the viewport */
+    height: calc(100vh - 350px); /* Ensures each post occupies most of the viewport */
 }
 
 .post-header, .post-footer {
