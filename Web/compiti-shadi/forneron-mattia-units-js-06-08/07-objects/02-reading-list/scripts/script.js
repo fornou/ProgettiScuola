@@ -1,4 +1,3 @@
-// Creating an array of book objects
 let books = [
     {
         title: "The Hobbit",
