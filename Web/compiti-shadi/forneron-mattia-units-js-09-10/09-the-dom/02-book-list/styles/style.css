@@ -1,0 +1,21 @@
+.letto{
+    color: green;
+}
+.daLeggere{
+    color: red;
+}
+ul{
+    text-align: center;
+    list-style: none;
+    background-color: rgb(192, 158, 118);
+    padding: 45px;
+    width: 200px;
+    height: 350px;
+    margin: 10px;
+    float: inline-start;
+    border-radius: 25px;
+}
+body{
+    background-color: bisque;
+    text-align: center;
+}

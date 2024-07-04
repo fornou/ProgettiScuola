@@ -1,68 +1,48 @@
 const items = [
     "Apple",         
     "Banana",        
-    "Orange",        
-    "Strawberry",    
-    "Grapes",        
-    "Pasta",         
-    "Rice",          
-    "Bread",         
-    "Milk",          
-    "Cheese",        
-    "To Kill a Mockingbird",  
-    "1984",                   
-    "The Great Gatsby",       
-    "Moby Dick",              
-    "War and Peace",          
-    "The Catcher in the Rye", 
-    "The Hobbit",             
-    "Pride and Prejudice",    
-    "Harry Potter",           
-    "The Lord of the Rings",  
-    "Laptop",                 
-    "Smartphone",             
-    "Tablet",                 
-    "Headphones",             
-    "Charger",                
-    "Backpack",               
-    "Notebook",               
-    "Pen",                    
-    "Watch",                  
-    "Water Bottle"            
+    "Orange",
+    "Strawberry"              
 ];
 
 let i = 0
 
 function displayItemTimeOut(){
-    if(i<items.length){
-        console.log(items[i])
-        i++;
-    }else{
-        return;
-    }
-    setTimeout(displayItemTimeOut, 1000); 
+    setTimeout(()=>{
+        const cont = document.getElementById("container");
+
+        if(i<items.length){
+            const p = document.createElement("p")
+            p.textContent = items[i];
+            cont.appendChild(p);
+            i++;
+        }else{
+            i = 0;
+            cont.innerHTML = ""
+        }
+        displayItemTimeOut()
+    }, 1000); 
 }
 
-function displayItemInterval(){
-    setInterval(() => {
+//displayItemTimeOut();
+
+
+function displayItemInterval(time){
+    let one = setInterval(() => {
         const cont = document.getElementById("container");
     
         if(i<items.length){
-            console.log(items[i])//debug
             const p = document.createElement("p")
             p.textContent = items[i]
             cont.appendChild(p)
             i++;
         }else{
-            return;
+            i = 0;
+            cont.innerHTML="";
+            clearInterval(one);
+            displayItemInterval(500);
         }
-    }, 1000);
+    }, time);
 }
 
-
-displayItemInterval();
-
-
-
-
-
+displayItemInterval(500)
